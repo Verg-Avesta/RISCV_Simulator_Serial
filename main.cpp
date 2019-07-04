@@ -68,7 +68,7 @@ int main() {
         //cout<<hex<<(int)memory[PC]<<(int)memory[PC+1]<<(int)memory[PC+2]<<(int)memory[PC+3]<<endl;
 
         IF(code);
-        if(memory[0x30004]!=0) return ((reg[10])&((1<<8)-1));
+        if(memory[0x30004]!=0) {cout<<((reg[10])&((1<<8)-1));return 0;}
     }
     for(int j=0;j<32;j++)cout<<reg[j]<<' ';
     return 0;
